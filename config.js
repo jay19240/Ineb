@@ -73,7 +73,7 @@ var config = convict({
   contactEmail: {
     doc: 'Email contact',
     format: String,
-    default: 'myleine19@live.fr'
+    default: ''
   },
   mailer: {
     enable: {
@@ -84,7 +84,7 @@ var config = convict({
     host: {
       doc: 'The mail-service host.',
       format: String,
-      default: 'ssl0.ovh.net'
+      default: ''
     },
     port: {
       doc: 'The mail-service port to bind.',
@@ -94,12 +94,12 @@ var config = convict({
     user: {
       doc: 'Email.',
       format: String,
-      default: 'contact@natureellebeaute.fr'
+      default: ''
     },
     pass: {
       doc: 'Email password.',
       format: String,
-      default: 'Julien@19'
+      default: ''
     },
   },
   sms: {
@@ -111,39 +111,39 @@ var config = convict({
     account: {
       doc: 'The sms-service account name.',
       format: String,
-      default: 'sms-rj884484-2'
+      default: ''
     },
     endPoint: {
       doc: 'The sms-service end-point.',
       format: String,
-      default: 'ovh-eu'
+      default: ''
     },
     key: {
       doc: 'The sms-service app-key.',
       format: String,
-      default: 'n0rvF09ZdXd2XUwG'
+      default: ''
     },
     secret: {
       doc: 'The sms-service secret-key',
       format: String,
-      default: 'ShUdprZMhW62PyhGYG3LanaPYbRiHSTl'
+      default: ''
     },
     consumer: {
       doc: 'The sms-service consumer-key',
       format: String,
-      default: 'LzH5Y9oCY2kIqbSNb7gY7Vd4PedjAn9G'
+      default: ''
     }
   },
   db: {
     host: {
       doc: 'Database host name/IP',
       format: String,
-      default: 'localhost'
+      default: ''
     },
     name: {
       doc: 'Database name',
       format: String,
-      default: 'ineb'
+      default: ''
     },
     debug: {
       doc: 'Database debug enable',
